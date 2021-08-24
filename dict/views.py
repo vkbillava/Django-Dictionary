@@ -27,7 +27,7 @@ def home(request):
 
         additional = ' '.join(txt1.split())
 
-        param = {'lebel1': "Meaning of", 'lebel1': "Additional Info of",
+        param = {'label1': "Meaning of", 'label2': "Additional Info of",
                  'text': span[0].text, 'addon': additional, 'word': word}
         return render(request, 'index.html', param)
     else:
